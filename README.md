@@ -14,9 +14,12 @@ Alignement de tous les éléments. Utilisation d'éléments HTML sémantiques po
 # Built With
 
 HTML5
+
 CSS3
+
 Bootstrap
-Live Demo
+
+# Live Demo
 Live Demo Link
 
 # Authors
@@ -29,7 +32,7 @@ Twitter: @DavidYao3
 
 LinkedIn: @DavidYao
 
-👤 **Arsene KOUASSI
+👤 ** Arsene KOUASSI
 
 GitHub: @aouman
 
