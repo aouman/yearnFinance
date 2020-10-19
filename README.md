@@ -30,9 +30,7 @@ LinkedIn: @DavidYao
 
 👤 **Arsene KOUASSI
 
-GitHub: @zdrale
-
-Twitter: @zdralenikola
+GitHub: @aouman
 
 LinkedIn: @nikola-zdrale
 
