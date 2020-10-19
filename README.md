@@ -19,16 +19,22 @@ Live Demo
 Live Demo Link
 
 #Authors
+
 👤 **David YAO
 
 GitHub: @daviidy
+
 Twitter: @DavidYao3
+
 LinkedIn: @DavidYao
-###
+
 👤 **Arsene KOUASSI
 
 GitHub: @zdrale
+
 Twitter: @zdralenikola
+
 LinkedIn: @nikola-zdrale
+
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
