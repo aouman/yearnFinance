@@ -3,7 +3,7 @@
 The News Week Clone
 Clone of The News Week webpage with responsive layout
 
-screenshot
+
 
 This project is the seventh one in the HTML/CSS module at Microverse. Main goal was to build responsive web page using Bootstrap. We cloned The News Week website.
 
@@ -18,7 +18,7 @@ Bootstrap
 Live Demo
 Live Demo Link
 
-Authors
+#Authors
 👤 **David YAO
 
 GitHub: @daviidy
