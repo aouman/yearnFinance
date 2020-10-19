@@ -24,7 +24,8 @@ Live Demo Link
 GitHub: @daviidy
 Twitter: @DavidYao3
 LinkedIn: @DavidYao
-👤 Nikola Zdrale
+###
+👤 **Arsene KOUASSI
 
 GitHub: @zdrale
 Twitter: @zdralenikola
