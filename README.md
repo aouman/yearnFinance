@@ -5,22 +5,23 @@ Clone of The News Week webpage with responsive layout
 
 
 
-This project is the seventh one in the HTML/CSS module at Microverse. Main goal was to build responsive web page using Bootstrap. We cloned The News Week website.
+L'objectif principal de ce projet, était de créer une page Web réactive à l'aide d'un modèle. Nous avons cloné le site Web de yearn.finance.
 
-We worked on all the requirements given on this project.
+Nous avons travaillé sur toutes les exigences données sur ce projet.
 
-Aligned all elements with float and flex or grid. Used semantic HTML elements for the header, the main content and the footer. We styled the elements to look like the real webpage. We used Bootstrap.
+Alignement de tous les éléments. Utilisation d'éléments HTML sémantiques pour l'en-tête, le contenu principal et le pied de page. Nous avons conçu les éléments pour qu'ils ressemblent à la vraie page Web.
 
-Built With
+# Built With
+
 HTML5
 CSS3
 Bootstrap
 Live Demo
 Live Demo Link
 
-#Authors
+# Authors
 
-👤 **David YAO
+👤 ** David YAO
 
 GitHub: @daviidy
 
