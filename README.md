@@ -5,11 +5,11 @@ Clone of The yearn Finance webpage with responsive layout
 
 
 
-L'objectif principal de ce projet, était de créer une page Web réactive à l'aide d'un modèle. Nous avons cloné le site Web de yearn.finance.
+The main objective of this project was to create a responsive web page using a template. We cloned the yearn.finance website.
 
-Nous avons travaillé sur toutes les exigences données sur ce projet.
+We have worked on all the requirements given on this project.
 
-Alignement de tous les éléments. Utilisation d'éléments HTML sémantiques pour l'en-tête, le contenu principal et le pied de page. Nous avons conçu les éléments pour qu'ils ressemblent à la vraie page Web.
+Alignment of all elements. Use of semantic HTML elements for the header, main content and footer. We designed the elements to look like the real web page.
 
 # Built With
 
