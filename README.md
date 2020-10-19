@@ -1,7 +1,5 @@
 # yearnFinance
 
-The News Week Clone
-Clone of The yearn Finance webpage with responsive layout
 
 
 
