@@ -36,7 +36,7 @@ LinkedIn: @DavidYao
 
 GitHub: @aouman
 
-LinkedIn: @nikola-zdrale
+LinkedIn: @aouman-kouassi
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
