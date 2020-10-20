@@ -656,7 +656,20 @@
     .jss274:hover .title {
       color: #fff;
     }
-
+    /*.jss270 a:hover .description{
+      color: #fff;
+      display: block;
+      padding: 48px;
+      text-align: center;
+      width: auto;
+    }*/
+    .jss270 a:hover{
+      width: 17%;
+    }
+    a{
+      text-decoration: none;
+      width: 17%;
+    }
     .jss274:hover .icon {
       color: #fff;
     }
@@ -757,11 +770,23 @@
       .jss278 {
         font-size: 100px;
       }
+
+    }
+    @media (max-width:600px) {
+      .jss270 a{
+        width: 100%;
+      }
+
+      .jss270 a:hover{
+        width: 100%;
+      }
+
     }
 
     .jss279 {
       text-decoration: none;
     }
+
   </style>
 </head>
 
@@ -769,20 +794,29 @@
   <div id="root">
     <div style="display: flex; flex-direction: column; min-height: 100vh; align-items: center; background: rgb(249, 250, 251);">
       <div class="jss270">
-        <div class="MuiPaper-root MuiCard-root jss271 jss274 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+
+        <a href="earn.html">
+        <div class="MuiPaper-root MuiCard-root jss271 jss274 MuiPaper-elevation1 MuiPaper-rounded" ><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+
             <path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"></path>
             <path fill="none" d="M0 0h24v24H0z"></path>
-          </svg>
-          <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Dashboard</h3>
-          <h4 class="MuiTypography-root undefined description MuiTypography-h4">Get a quick glance at how your portfolio is growing while invested in yearn's products.</h4>
+            </svg>
+            <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Dashboard</h3>
+            <h4 class="MuiTypography-root undefined description MuiTypography-h4">Get a quick glance at how your portfolio is growing while invested in yearn's products.</h4>
+
         </div>
-        <div class="MuiPaper-root MuiCard-root jss271 jss275 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="none" d="M0 0h24v24H0V0z"></path>
-            <path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"></path>
-          </svg>
-          <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Vaults</h3>
-          <h4 class="MuiTypography-root undefined description MuiTypography-h4">Vaults follow unique strategies that are designed to maximize the yield of the deposited asset and minimize risk.</h4>
-        </div>
+        </a>
+        <a href="earn.html">
+          <div class="MuiPaper-root MuiCard-root jss271 jss275 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="none" d="M0 0h24v24H0V0z"></path>
+              <path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"></path>
+            </svg>
+            <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Vaults</h3>
+            <h4 class="MuiTypography-root undefined description MuiTypography-h4">Vaults follow unique strategies that are designed to maximize the yield of the deposited asset and minimize risk.</h4>
+          </div>
+        </a>
+
+        <a href="earn.html">
         <div class="MuiPaper-root MuiCard-root jss271 jss272 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z">
@@ -792,6 +826,8 @@
           <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Earn</h3>
           <h4 class="MuiTypography-root undefined description MuiTypography-h4">Earn performs profit switching for lending providers, moving your funds between dydx, Aave, Compound autonomously.</h4>
         </div>
+        </a>
+        <a href="earn.html">
         <div class="MuiPaper-root MuiCard-root jss271 jss273 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
             <path fill="none" d="M0 0h24v24H0z"></path>
             <path d="M7 2v11h3v9l7-12h-4l4-8z"></path>
@@ -799,6 +835,8 @@
           <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Zap</h3>
           <h4 class="MuiTypography-root undefined description MuiTypography-h4">Zaps help you save on gas fees. Zap directly into or out of Curve pools from the base assets.</h4>
         </div>
+        </a>
+        <a href="earn.html">
         <div class="MuiPaper-root MuiCard-root jss271 jss276 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
             <path fill="none" d="M0 0h24v24H0z"></path>
@@ -806,6 +844,8 @@
           <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Cover</h3>
           <h4 class="MuiTypography-root undefined description MuiTypography-h4">Get cover with Nexus Mutual from yinsure.finance</h4>
         </div>
+        </a>
+        <a href="earn.html">
         <div class="MuiPaper-root MuiCard-root jss271 jss274 MuiPaper-elevation1 MuiPaper-rounded"><svg class="MuiSvgIcon-root jss278 icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"></path>
             <path fill="none" d="M0 0h24v24H0z"></path>
@@ -813,6 +853,7 @@
           <h3 class="MuiTypography-root jss277 title MuiTypography-h3">Stats</h3>
           <h4 class="MuiTypography-root undefined description MuiTypography-h4">Get a quick glance at how yearn's vaults are performing.</h4>
         </div>
+        </a>
       </div>
     </div>
   </div>
@@ -941,6 +982,7 @@
       t()
     }([])
   </script>
+  <script src="index.js" charset="utf-8"></script>
   <script src="./static/js/3.7f5c1137.chunk.js"></script>
   <script src="./static/js/main.b50722b8.chunk.js"></script>
 </body>
