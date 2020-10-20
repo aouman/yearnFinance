@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,6 +24,8 @@
   <meta name="theme-color" content="#000000">
   <meta name="viewport" content="initial-scale=1,minimum-scale=1,width=device-width,shrink-to-fit=yes">
   <link rel="manifest" href="./manifest.json">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <title>yearn</title>
   <link href="./static/css/main.60c6551b.chunk.css" rel="stylesheet">
   <style data-jss="" data-meta="MuiCssBaseline">
@@ -617,7 +620,7 @@
     }
 
     .jss14 {
-      fill: rgba(25, 101, 233, 0.5);
+      fill: rgba(25, 101, 233, 0.5)!important;
       margin-right: 6px;
     }
 
@@ -865,6 +868,22 @@
 .jss508{top:0px;right:0px;cursor:pointer;position:absolute;}
 /*! CSS Used fontfaces */
 @font-face{font-family:Work Sans Thin;font-style:normal;font-display:swap;font-weight:400;src:local('Work Sans Thin'),     local('Work Sans Thin'),     url(https://yearn.finance/static/media/WorkSans-VariableFont_wght.b2439691.ttf) format('truetype');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;}
+#overlay{
+  position: fixed;
+  z-index: 1300;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: none;
+}
+#close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   color: #000;
+}
   </style>
 </head>
 
@@ -873,7 +892,7 @@
     <div style="display: flex; flex-direction: column; min-height: 100vh; align-items: center; background: rgb(249, 250, 251);">
       <div class="jss280">
         <div class="jss281">
-          <div class="jss282"><img alt="" src="./static/media/YFI-logo.cda8d5a4.png" height="40px">
+          <div class="jss282"><img alt="" src="imgs/YFI-logo.cda8d5a4.png" height="40px">
             <h3 class="MuiTypography-root jss291 MuiTypography-h3">yearn.finance</h3>
           </div>
           <div class="jss283">
@@ -911,7 +930,7 @@
       </div>
       <div class="jss11">
         <div class="jss16">
-          <h6 class="MuiTypography-root jss18 MuiTypography-h6">yearn.finance</h6><img alt="" src="./static/media/YFI-logo.cda8d5a4.png" height="120px" width="120px">
+          <h6 class="MuiTypography-root jss18 MuiTypography-h6">yearn.finance</h6><img alt="" src="imgs/YFI-logo.cda8d5a4.png" height="120px" width="120px">
           <div class="jss13 jss17"><svg class="MuiSvgIcon-root jss14" focusable="false" viewBox="0 0 24 24" aria-hidden="true" height="15px">
               <path fill="none" d="M0 0h24v24H0z" clip-rule="evenodd"></path>
               <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path>
@@ -1007,19 +1026,19 @@
         </div>
         <div class="jss21">
           <h6 class="MuiTypography-root jss12 MuiTypography-h6">Socials</h6>
-          <div class="jss13"><img alt="" src="./static/media/twitter.d096bc16.svg" height="24px" class="jss14">
+          <div class="jss13"><img alt="" src="imgs/twitter.svg" height="24px" class="jss14">
             <h4 class="MuiTypography-root MuiTypography-h4">Twitter</h4>
           </div>
-          <div class="jss13"><img alt="" src="./static/media/medium.48651d56.svg" height="24px" class="jss14">
+          <div class="jss13"><img alt="" src="imgs/medium.svg" height="24px" class="jss14">
             <h4 class="MuiTypography-root MuiTypography-h4">Medium</h4>
           </div>
-          <div class="jss13"><img alt="" src="./static/media/discord.c4ee516e.svg" height="24px" class="jss14">
+          <div class="jss13"><img alt="" src="imgs/discord.svg" height="24px" class="jss14">
             <h4 class="MuiTypography-root MuiTypography-h4">Discord</h4>
           </div>
-          <div class="jss13"><img alt="" src="./static/media/telegram.bb486f03.svg" height="24px" class="jss14">
+          <div class="jss13"><img alt="" src="imgs/telegram.svg" height="24px" class="jss14">
             <h4 class="MuiTypography-root MuiTypography-h4">Telegram</h4>
           </div>
-          <div class="jss13"><img alt="" src="./static/media/github.7611642e.svg" height="24px" class="jss14">
+          <div class="jss13"><img alt="" src="imgs/github.svg" height="24px" class="jss14">
             <h4 class="MuiTypography-root MuiTypography-h4">Github</h4>
           </div>
         </div>
@@ -1156,7 +1175,7 @@
 
 
   <!--POPUP-->
-  <div role="presentation" class="MuiDialog-root" style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px; display:block">
+  <div role="presentation" id="overlay" class="MuiDialog-root" style="">
     <div class="MuiBackdrop-root" aria-hidden="true" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
     <div tabindex="0" data-test="sentinelStart"></div>
     <div class="MuiDialog-container MuiDialog-scrollPaper" role="none presentation" tabindex="-1" style="transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;">
@@ -1171,27 +1190,27 @@
               <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">MetaMask</h3><img src="./static/media/icn-metamask.a357c69f.svg" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">MetaMask</h3><img src="imgs/icn-metamask.svg" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">TrustWallet</h3><img src="./static/media/trustWallet.edcc1ab5.png" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">TrustWallet</h3><img src="imgs/trustWallet.png" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">WalletConnect</h3><img src="./static/media/walletConnectIcon.8215855c.svg" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">WalletConnect</h3><img src="imgs/walletConnectIcon.svg" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Coinbase Wallet</h3><img src="./static/media/coinbaseWalletIcon.62578f59.svg" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Coinbase Wallet</h3><img src="imgs/coinbaseWalletIcon.svg" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Ledger</h3><img src="./static/media/icn-ledger.ae009e65.svg" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Ledger</h3><img src="imgs/icn-ledger.svg" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
@@ -1208,7 +1227,7 @@
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Portis</h3><img src="./static/media/portisIcon.b234b2bf.png" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Portis</h3><img src="imgs/portisIcon.png" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
@@ -1225,7 +1244,7 @@
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
-                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Authereum</h3><img src="./static/media/icn-aethereum.54d70e4e.svg" alt=""
+                      <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">Authereum</h3><img src="imgs/icn-aethereum.54d70e4e.svg" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
                 <div style="width: 252px; margin: 12px 0px;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
@@ -1244,13 +1263,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript">
-      /*$(document).ready(function(){
-            $("p").click(function(){
-              $(".MuiDialog-root").css({"position": "fixed", "z-index": "1300", "right": "0", "left": "0", "top": "0", "bottom": "0"});
-            })
-      });*/
+
       $(document).ready(function() {
-         $('.jss287').click(function() {
+         $('.jss288').click(function() {
             $('#overlay').fadeIn(300);
          });
          $('.MuiSvgIcon-root, .MuiBackdrop-root').click(function() {
