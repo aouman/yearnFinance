@@ -1241,6 +1241,24 @@
     <div tabindex="0" data-test="sentinelEnd"></div>
   </div>
   <!--POPUP-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      /*$(document).ready(function(){
+            $("p").click(function(){
+              $(".MuiDialog-root").css({"position": "fixed", "z-index": "1300", "right": "0", "left": "0", "top": "0", "bottom": "0"});
+            })
+      });*/
+      $(document).ready(function() {
+         $('.jss287').click(function() {
+            $('#overlay').fadeIn(300);
+         });
+         $('.MuiSvgIcon-root, .MuiBackdrop-root').click(function() {
+            $('#overlay').fadeOut(300);
+         });
+      });
+  </script>
+
 </body>
 
 </html>
