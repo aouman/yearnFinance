@@ -1,6 +1,6 @@
 # yearnFinance
-
-
+![first page](https://github.com/aouman/yearnFinance/blob/main/imgs/Capture.PNG)
+![seconde page](https://github.com/aouman/yearnFinance/blob/main/imgs/Capture.PNG)
 
 
 The main objective of this project was to create a responsive web page using a template. We cloned the yearn.finance website.
