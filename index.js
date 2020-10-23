@@ -1,9 +1,18 @@
 $(document).ready(function() {
-       $('.jss288').click(function() {
-          $('#overlay').fadeIn(300);
-       });
-       $('.MuiSvgIcon-root, .MuiBackdrop-root').click(function() {
-          $('#overlay').fadeOut(300);
-       });
+  /*si l'on click sur la div, qu'el va sur la page d'accueil*/
+
+ $("div.url").click(
+  function()
+  {
+      window.location = $(this).attr("url");
+      return false;
+  });
+
+  /*changement de du border des button du menu*/
+  $('.jss283 .jss284 h4').on('click', function(e){
+    e.preventDefault();
+    var me=$(this).parent().toggleClass('jss286')
+    $(".jss286").not(me).removeClass('jss286')
+  });
 
 });
